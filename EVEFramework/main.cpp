@@ -99,7 +99,7 @@ void sellRoutine(const HWND &hWindow) {
 	LogUtil logUtil;
 	std::vector<std::string> watchlist;
 	//TODO: Remove absolute path
-	logUtil.watchlistImport("%USERPROFILE%\\Documents\\Visual Studio 2015\\Projects\\ConsoleApplication1\\ConsoleApplication1\\sale.txt", watchlist);
+	logUtil.watchlistImport("%USERPROFILE%\\Documents\\Visual Studio 2017\\Projects\\ConsoleApplication1\\ConsoleApplication1\\sale.txt", watchlist);
 	InputHelper in(stop);
 	in.mouseLeftClick(TASKBAR_INVENTORY, hWindow);
 	TSleep(1000);
@@ -146,7 +146,7 @@ void marketScan(const HWND &hWindow) {
 
 	LogUtil logUtil;
 	std::vector<std::string> watchlist;
-	logUtil.watchlistImport("C:\\Users\\Kush\\Documents\\Visual Studio 2015\\Projects\\ConsoleApplication1\\ConsoleApplication1\\minerals.txt", watchlist);
+	logUtil.watchlistImport("C:\\Users\\Kush\\Documents\\Visual Studio 2017\\Projects\\ConsoleApplication1\\ConsoleApplication1\\minerals.txt", watchlist);
 	InputHelper in(stop);
 	in.mouseLeftClick(TASKBAR_MARKET, hWindow);
 	TSleep(2000);

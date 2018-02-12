@@ -1,10 +1,3 @@
-/* int logImport(std::string filepath, std::vector<std::vector<std::string>> *p_v_strings)
-	filepath - filepath to log
-	p_v_strings - pointer to vector of string arrays to save data to
-
-	Saves data to provided vector of string arrays
-	returns 0 for success, 1 for failure */
-
 #include <fstream>
 #include <ctime>
 #include <sstream>
@@ -128,6 +121,7 @@ std::vector<Order> LogUtil::importAnalysis(const std::string &searchString) {
 		log->error("FATAL ERROR! Could not open file... Terminating...");
 	}
 	log->debug("Log analysis finished");
+	return orders;
 }
 
 int LogUtil::marketImport(const std::string &filepath, std::vector<std::vector<std::string>> &p_v_strings) {
@@ -224,4 +218,3 @@ bool finddate(const std::string &str) {
 	reverse(buffer.begin(), buffer.end());
 	return	!(date.find(buffer) != std::string::npos);
 }
-

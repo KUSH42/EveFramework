@@ -277,4 +277,3 @@ int InputHelper::listSelect(const HWND &hWindow, const std::string &searchString
 	log->critical("EFA5478: Uh oh.... You should not end up here....");
 	return -1;
 }
-
